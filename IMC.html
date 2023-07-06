@@ -1,0 +1,110 @@
+<meta charset="utf-8">
+<h3>Programa para calcular IMC</h3>
+
+<script>
+	function saltar(){
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function imprimir(frase){
+		document.write(frase);
+		saltar();
+
+	}
+	function calcularIMC(peso,altura){
+		imc = peso / (altura+altura);
+		
+		return imc;
+		
+	}
+	//LLamar función
+	var imcM = calcularIMC(52,1.60);
+	var imcI = calcularIMC(77,1.58);
+	
+	imprimir("El promedio de IMC calculado de Maria e Isabel es " +(imcM+imcI)/2);
+</script>
+<br>
+<br>
+<script>
+	function saltar(){
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function imprimir(frase){
+		document.write(frase);
+		saltar();
+	}
+	function calcularIMC(peso,altura){
+		return (peso / (altura+altura));			
+	}
+	//LLamar función
+	imprimir("El promedio de IMC calculado de Maria e Isabel es " +(calcularIMC(52,1.60)+calcularIMC(77,1.58))/2);
+
+	imprimir("El promedio de IMC calculado de Mariana y Jairo es " +(calcularIMC(50,1.58)+calcularIMC(92,1.73))/2);
+</script>
+
+<br>
+<br>
+<meta charset="UTF-8">
+
+<script>
+    function saltarLinea() {
+
+        document.write("<br>");
+    }
+
+    function mostrar(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    function a(numero1, numero2) {
+        return numero1 + numero2;
+    }
+
+    function b(numero1, numero2) {
+        return numero1 / numero2;
+    }
+
+    var resultado = a(10,20) + b(30,2);
+
+    mostrar(resultado);
+</script>
+<br>
+<script>
+	function saltar(){
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function imprimir(frase){
+		document.write(frase);
+		saltar();
+	}
+	function calcularIMC(peso,altura){
+		return (peso / (altura+altura));			
+	}
+	//LLamar función
+	nombre = prompt("Ingrese su nombre");
+	pesoInformado= prompt(nombre +" Ingrese su peso: ");
+	alturaInformada= prompt(nombre +" Ingrese su altura: ");
+
+	imcCalculado= calcularIMC(pesoInformado,alturaInformada)
+
+	imprimir(nombre + ", su imc calculado es: "+ imcCalculado);
+
+	if (imcCalculado <= 18.5) {
+		imprimir("IMC abajo de lo recomendado");
+	}
+	if (imcCalculado >= 18.5 && imcCalculado<=24.9) {
+		imprimir("IMC está dentro del intervalo normal");
+	}	
+	if (imcCalculado >= 25 && imcCalculado<30) {
+		imprimir("IMC considerada como sobrepeso");
+	}
+	if (imcCalculado >= 30) {
+		imprimir("IMC considerado como obesidad");
+	}
+</script>

@@ -1,0 +1,81 @@
+<meta charset="utf-8">
+<h1>Juegos</h1>
+<h3>Juego 1. Adivinanza</h3>
+
+<script>
+	function saltar(){
+		document.write("<br>");
+		document.write("<br>");
+		document.write("<br>");
+	}
+	function imprimir(frase){
+		document.write(frase);
+		saltar();
+
+	}
+
+	var numPensado = Math.round(Math.random()*10);
+	var intentos = 3;
+	var contador = 1;
+
+	
+
+	while(contador<= intentos){
+		var numLanzado = parseInt(prompt("Ingrese un númeor entre 0 y 10"));
+
+		if (numPensado == numLanzado) {
+		alert("Usted acertó en el intento" +contador+ " el número pensado era" +numPensado);
+		break;
+		} 
+		else {
+		alert("Usted erró");
+	    }
+	    contador++;
+	
+	}
+	if (numPensado == numLanzado) {
+		imprimir("Usted acertó en el intento" +contador+ " el número pensado era" +numPensado);
+		
+		} 
+		else {
+		alert("Usted erró el número pensado era " + numPensado);
+	    }
+	    contador++;
+
+	imprimir("Fin del juego");
+
+	
+	
+</script>
+<br>
+<!--<h3>Juego 2. Conducir</h3>
+
+
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+    var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+     if((edad >= 18) && (tieneLicencia == "S")) {
+            imprimir("Puedes conducir");
+        }
+
+    else {
+        imprimir("No puedes conducir");
+    }
+
+
+</script>-->
+
+<!--1 – Crea una función de lotería que reciba un número n y sortee un número entre 0 a n, retornando ese valor. De esta forma, en vez de escribir var numeroPensado = Math.round(Math.random()*n);, escribirás var numeroPensado = sorteo(n);. Realiza esa modificación, creando una nueva función y utilízala de forma correcta.
+
+2 – Hacer que tu juego exhiba, cuando el usuario falle el intento, si el número lanzado era mayor o menor al número pensando por el programa.-->
+
+
